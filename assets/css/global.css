@@ -114,6 +114,21 @@ footer {
 }
 
 
+
+.content-image-banner {
+  position: relative;
+  padding: 0;
+  padding-bottom: 56.25%;
+}
+
+.content-image-banner img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
 .custom {
   padding-top: 160px;
   padding-bottom: 160px;
