@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <img class="card-img-top" src="https://dummyimage.com/16:9x1080/" alt="">
+          <div class="card-body">
+            <h6 class="card-title h2">Title</h6>
+            <p class="card-text">Description</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-stacked" style="max-height: calc(100vh - 456px); overflow: auto;">
+          {% for project in site.projects %}
+            <a class="card">
+              <div class="card-img-wrapper">
+                <img class="card-img" src="https://dummyimage.com/16:9x1080/" alt="">
+              </div>
+              <div class="card-img-overlay">
+                <h6 class="card-title h4">{{ project.title }}</h6>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

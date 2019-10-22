@@ -1,35 +1,15 @@
-- text: Dashboard
-  icon: fas fa-tachometer-alt
-  url: app/dashboard/
+- text: Services
+  icon: 
+  url: services.html
 
-- text: Calendar
-  icon: far fa-calendar
-  url: app/calendar/
+- text: Projects
+  icon: 
+  url: projects/
 
-- text: Customers
-  icon: fas fa-address-book
-  url: app/customers/
+- text: Videos
+  icon: 
+  url: videos.html
 
-- text: Messages
-  icon: fas fa-comments
-  url: app/messages/
-
-- text: Invoices
-  icon: fas fa-file-invoice
-  url: app/invoices/
-
-- text: Satisfactions
-  icon: fas fa-hand-holding-heart
-  url: app/satisfactions/
-
-- text: Reports
-  icon: fas fa-chart-bar
-  url: app/reports/
-
-- text: Employees
-  icon: fas fa-users
-  url: app/employees/
-
-- text: Settings
-  icon: fas fa-cog
-  url: app/settings/advanced-settings.html
+- text: About
+  icon: 
+  url: about.html

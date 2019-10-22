@@ -4,7 +4,7 @@ layout: base
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
       <img class="navbar-image" src="{{ site.baseurl }}/assets/img/logo/LOGO_DXC-Technology-Black-01.svg" alt="" height="32" />
       <span class="navbar-text">DTC Manila</span>
     </a>
@@ -12,21 +12,17 @@ layout: base
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Videos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
-      <a class="btn btn-primary btn-lg shadow-sm" href="">Engage With Us</a>
+
+      {% include components/molecules/nav-menu.html
+        nav-type="navbar-nav mr-auto"
+        isLarge=""
+        isStacked=""
+        isJustified=""
+        list-value-name=site.data.navigation.global
+        hasIcon="true"
+      %}
+
+      <a class="btn btn-primary btn-lg shadow-sm" href="{{ site.baseurl }}/engage-with-us.html">Engage With Us</a>
     </div>
   </div>
 </nav>
@@ -37,10 +33,10 @@ layout: base
 
 <footer>
   <div class="container">
-    <div class="d-flex flex-column">
-      <div class="heading">
-        <h1 class="heading-title">Begin your digital transformation journey today.</h1>
-        <a class="btn btn-primary btn-lg" href="">Engage With Us</a>
+    <div style="">
+      <div class="header text-center">
+        <h1 class="header-title">Begin your digital transformation<br>journey today.</h1>
+        <a class="btn btn-primary btn-lg mt-5" href="">Engage With Us</a>
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -102,6 +98,7 @@ layout: base
           </ul>
         </div>
       </div>
+      <hr>
       <div class="text-muted text-center">
         Copyright © 2018 DTC Manila. All rights reserved.
       </div>

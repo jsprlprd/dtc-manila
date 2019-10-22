@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="content">
+  <div class="container">
+    <div class="card-columns">
+      {% for project in site.projects %}
+        <a class="card" href="{{ site.baseurl }}{{ project.url }}">
+          <div class="card-img-wrapper embed-responsive embed-responsive-16x9">
+            <img class="card-img embed-responsive-item" src="https://dummyimage.com/16:9x1080/" alt="">
+          </div>
+          <div class="card-body">
+            <div class="card-heading">
+              <h6 class="card-heading-title h4">{{ project.title }}</h6>
+              <p class="card-heading-subtitle">{{ project.type }}</p>
+            </div>
+            <p class="card-text">{{ project.details }}</p>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>  
+</section>
+
+<img class="parallax w-100" src="{{ site.baseurl }}/assets/img/ipc-building.png" alt="">
+
+<section class="content">
+  <div class="container">
+    <div class="header">
+      <h1 class="header-title">Leveraging existing solutions to innovate at scale.</h1>
+    </div>
+    <a class="cta" href="">View Synapse<i class="fas fa-arrow-right ml-2"></i></a>
+  </div>
+</section>

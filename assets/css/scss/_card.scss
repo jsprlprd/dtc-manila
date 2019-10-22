@@ -237,7 +237,7 @@
 
 .card-columns {
   .card {
-    margin-bottom: $card-columns-margin;
+    margin-bottom: $card-columns-gap;
   }
 
   @include media-breakpoint-up(sm) {

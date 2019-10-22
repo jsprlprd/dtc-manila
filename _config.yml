@@ -43,3 +43,14 @@ exclude:
   - vendor/ruby/
 
 stylesheet: dtc-manila
+
+
+
+
+
+
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
