@@ -32,4 +32,5 @@ fields:
   default: []
   label: Category
 pages:
+- _projects/credit-card-monitoring-mobile-app.md
 - _projects/flight-operations-application-suite.md
