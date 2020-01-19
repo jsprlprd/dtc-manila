@@ -8,14 +8,18 @@ layout: default
       {% for project in site.projects %}
         <a class="card" href="{{ site.baseurl }}{{ project.url }}">
           <div class="card-img-wrapper embed-responsive embed-responsive-16x9">
-            <img class="card-img embed-responsive-item" src="{{project.project_thumbnail}}" alt="">
+            <img class="card-img embed-responsive-item" src="{{project.thumbnail}}" alt="">
           </div>
           <div class="card-body">
             <div class="card-heading">
-              <h6 class="card-heading-title h4">{{ project.project_title }}</h6>
-              <p class="card-heading-subtitle">{{ project.project_category }}</p>
+              <h6 class="card-heading-title h4">{{ project.title }}</h6>
+              <ul class="card-heading-subtitle list-unstyled list-inline">
+                {% for category in project.category %}
+                  <li class="list-inline-item"><span class="badge badge-light">{{ category }}</span></li>
+                {% endfor %}
+              </ul>
             </div>
-            <p class="card-text">{{ project.project_description }}</p>
+            <p class="card-text">{{ project.description }}</p>
           </div>
         </a>
       {% endfor %}
