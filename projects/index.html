@@ -8,14 +8,14 @@ layout: default
       {% for project in site.projects %}
         <a class="card" href="{{ site.baseurl }}{{ project.url }}">
           <div class="card-img-wrapper embed-responsive embed-responsive-16x9">
-            <img class="card-img embed-responsive-item" src="https://dummyimage.com/16:9x1080/" alt="">
+            <img class="card-img embed-responsive-item" src="{{project.project_thumbnail}}" alt="">
           </div>
           <div class="card-body">
             <div class="card-heading">
               <h6 class="card-heading-title h4">{{ project.project_title }}</h6>
               <p class="card-heading-subtitle">{{ project.project_category }}</p>
             </div>
-            <p class="card-text">{{ project.project_details }}</p>
+            <p class="card-text">{{ project.project_description }}</p>
           </div>
         </a>
       {% endfor %}
@@ -23,7 +23,7 @@ layout: default
   </div>  
 </section>
 
-<img class="parallax w-100" src="{{project.project_thumbnail}}" alt="">
+<img class="parallax w-100" src="{{ site.baseurl }}/assets/img/ipc-building.png" alt="">
 
 <section class="content">
   <div class="container">
