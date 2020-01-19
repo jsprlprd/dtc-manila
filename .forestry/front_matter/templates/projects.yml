@@ -32,3 +32,8 @@ fields:
     source:
       type: simple
   label: Project Category
+- name: project_thumbnail
+  type: file
+  config:
+    maxSize: 250
+  label: Project Thumbnail
