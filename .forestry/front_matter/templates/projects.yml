@@ -1,4 +1,33 @@
 ---
 label: Projects
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: projects
+- name: featured
+  type: boolean
+  label: Featured
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 250
+  label: Thumbnail
+- name: category
+  type: tag_list
+  default: []
+  label: Category
