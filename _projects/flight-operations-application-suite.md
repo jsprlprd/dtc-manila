@@ -11,3 +11,6 @@ description: Our application helps our customers intelligently manage flight del
 thumbnail: "/uploads/FlightperationsApplicationSuite.jpg"
 
 ---
+# The Problem
+
+Challenges in managing flights during irregular operations and obtaining accurate data result in incorrect decisions and lost revenue. Too many tools that provide overlapping and sometimes conflicting information are causing unnecessary issues. This has lead to a growing loss of confidence and trust in the current application suite.
