@@ -31,3 +31,5 @@ fields:
   type: tag_list
   default: []
   label: Category
+pages:
+- _projects/flight-operations-application-suite.md
