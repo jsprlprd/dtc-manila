@@ -9,7 +9,7 @@ fields:
   label: Layout
   hidden: true
   default: projects
-- name: project-title
+- name: project_title
   type: text
   config:
     required: true
