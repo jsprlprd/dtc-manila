@@ -8,7 +8,7 @@ layout: default
       {% for project in site.projects %}
         <a class="card" href="{{ site.baseurl }}{{ project.url }}">
           <div class="card-img-wrapper embed-responsive embed-responsive-16x9">
-            <img class="card-img embed-responsive-item" src="{{project.thumbnail}}" alt="">
+            <img class="card-img embed-responsive-item" src="{{ site.baseurl }}{{project.thumbnail}}" alt="">
           </div>
           <div class="card-body">
             <div class="card-heading">
