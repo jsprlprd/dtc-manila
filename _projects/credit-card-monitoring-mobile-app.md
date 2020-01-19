@@ -9,6 +9,5 @@ description: A mobile application that allows the user to conveniently monitor a
   manage their credit card usage and view the points they’ve earned whilst using View
   Card.
 thumbnail: "/uploads/CreditCardMonitoringMobileApp.jpg"
-published: false
 
 ---
