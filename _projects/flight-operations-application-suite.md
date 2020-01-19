@@ -9,6 +9,5 @@ title: Flight Operations Application Suite
 description: Our application helps our customers intelligently manage flight delays/diversions/cancellations,
   ground delay programs, crew reassignment, and other flight problems.
 thumbnail: "/uploads/FlightperationsApplicationSuite.jpg"
-published: false
 
 ---
