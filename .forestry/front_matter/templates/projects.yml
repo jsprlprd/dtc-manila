@@ -1,4 +1,25 @@
 ---
 label: Projects
 hide_body: false
-fields: []
+fields:
+- name: project-title
+  type: text
+  config:
+    required: false
+  label: Project Title
+- name: project_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Project Description
+- name: project_category
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Project Category
