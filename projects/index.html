@@ -12,10 +12,10 @@ layout: default
           </div>
           <div class="card-body">
             <div class="card-heading">
-              <h6 class="card-heading-title h4">{{ project.title }}</h6>
-              <p class="card-heading-subtitle">{{ project.type }}</p>
+              <h6 class="card-heading-title h4">{{ project.project_title }}</h6>
+              <p class="card-heading-subtitle">{{ project.project_category }}</p>
             </div>
-            <p class="card-text">{{ project.details }}</p>
+            <p class="card-text">{{ project.project_details }}</p>
           </div>
         </a>
       {% endfor %}
@@ -23,7 +23,7 @@ layout: default
   </div>  
 </section>
 
-<img class="parallax w-100" src="{{ site.baseurl }}/assets/img/ipc-building.png" alt="">
+<img class="parallax w-100" src="{{project.project_thumbnail}}" alt="">
 
 <section class="content">
   <div class="container">
