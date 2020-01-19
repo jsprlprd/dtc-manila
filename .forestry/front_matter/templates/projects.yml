@@ -2,19 +2,26 @@
 label: Projects
 hide_body: false
 fields:
-- name: project-title
+- name: layout
   type: text
   config:
     required: false
+  label: Layout
+  hidden: true
+  default: projects
+- name: project-title
+  type: text
+  config:
+    required: true
   label: Project Title
 - name: project_description
   type: textarea
   default: ''
   config:
-    required: false
-    wysiwyg: false
+    required: true
+    wysiwyg: true
     schema:
-      format: markdown
+      format: html-blocks
   label: Project Description
 - name: project_category
   type: list
@@ -22,4 +29,6 @@ fields:
     use_select: false
     min: 
     max: 
+    source:
+      type: simple
   label: Project Category
