@@ -1,0 +1,691 @@
+---
+layout: tools
+
+container-type: container
+
+heading-title: Sales Calculator
+heading-subtitle: Easily calculate the costs of your project with just a few clicks.
+---
+
+
+
+
+<div class="row">
+  <div class="col-lg-8">
+    <div class="accordion" id="sales-calculator">
+
+
+      <div class="card">
+        <div class="card-header" id="designer-heading">
+          <h6 class="h5 mb-0">
+            <a href="#designer-body" data-toggle="collapse" data-target="#designer-body" aria-expanded="true" aria-controls="designer-body">Designer</a>
+          </h6>
+        </div>
+    
+        <div id="designer-body" class="collapse show" aria-labelledby="designer-heading" data-parent="">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link text-danger" href=""><i class="fas fa-minus mr-2"></i>Remove</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link" href=""><i class="fas fa-plus mr-2"></i>Add</a>
+              </div>
+            </div>
+            <!-- <a href="">Add New Designer</a> -->
+          </div>
+        </div>
+      </div>
+
+
+      
+      <div class="card">
+        <div class="card-header" id="developer-heading">
+          <h6 class="h5 mb-0">
+            <a href="#developer-body" data-toggle="collapse" data-target="#developer-body" aria-expanded="true" aria-controls="developer-body">Developer</a>
+          </h6>
+        </div>
+    
+        <div id="developer-body" class="collapse show" aria-labelledby="developer-heading" data-parent="">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link text-danger" href=""><i class="fas fa-minus mr-2"></i>Remove</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link" href=""><i class="fas fa-plus mr-2"></i>Add</a>
+              </div>
+            </div>
+            <!-- <a href="">Add New Designer</a> -->
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="card">
+        <div class="card-header" id="scrum-master-heading">
+          <h6 class="h5 mb-0">
+            <a href="#scrum-master-body" data-toggle="collapse" data-target="#scrum-master-body" aria-expanded="false" aria-controls="scrum-master-body">Scrum Master</a>
+          </h6>
+        </div>
+    
+        <div id="scrum-master-body" class="collapse" aria-labelledby="scrum-master-heading" data-parent="">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link text-danger" href=""><i class="fas fa-minus mr-2"></i>Remove</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link" href=""><i class="fas fa-plus mr-2"></i>Add</a>
+              </div>
+            </div>
+            <!-- <a href="">Add New Designer</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="scrum-master-heading">
+          <h6 class="h5 mb-0">
+            <a href="#scrum-master-body" data-toggle="collapse" data-target="#scrum-master-body" aria-expanded="false" aria-controls="scrum-master-body">Scrum Master</a>
+          </h6>
+        </div>
+    
+        <div id="scrum-master-body" class="collapse" aria-labelledby="scrum-master-heading" data-parent="">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link text-danger" href=""><i class="fas fa-minus mr-2"></i>Remove</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link" href=""><i class="fas fa-plus mr-2"></i>Add</a>
+              </div>
+            </div>
+            <!-- <a href="">Add New Designer</a> -->
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
+      <div class="card">
+        <div class="card-header" id="scrum-master-heading">
+          <h6 class="h5 mb-0">
+            <a href="#scrum-master-body" data-toggle="collapse" data-target="#scrum-master-body" aria-expanded="false" aria-controls="scrum-master-body">Scrum Master</a>
+          </h6>
+        </div>
+    
+        <div id="scrum-master-body" class="collapse" aria-labelledby="scrum-master-heading" data-parent="">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link text-danger" href=""><i class="fas fa-minus mr-2"></i>Remove</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link" href=""><i class="fas fa-plus mr-2"></i>Add</a>
+              </div>
+            </div>
+            <!-- <a href="">Add New Designer</a> -->
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="card-header" id="scrum-master-heading">
+          <h6 class="h5 mb-0">
+            <a href="#scrum-master-body" data-toggle="collapse" data-target="#scrum-master-body" aria-expanded="false" aria-controls="scrum-master-body">Number of Sprints</a>
+            <small>(1 week per sprint)</small>
+          </h6>
+          <p></p>
+        </div>
+    
+        <div id="scrum-master-body" class="collapse" aria-labelledby="scrum-master-heading" data-parent="">
+          <div class="card-body">
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link text-danger" href=""><i class="fas fa-minus mr-2"></i>Remove</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                {% include components/atoms/form/select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text=""
+                  input-size="col-lg"
+                  input-type=""
+                  input-name="designer-level"
+                  input-value=""
+                  input-placeholder="Select Level"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                  list-value-name=site.data.list-value.level
+                %}
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+              </div>
+              <div class="col">
+                <a class="btn btn-link" href=""><i class="fas fa-plus mr-2"></i>Add</a>
+              </div>
+            </div>
+            <!-- <a href="">Add New Designer</a> -->
+          </div>
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="grid-summary">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h6 class="card-title h4">Summary</h6>
+          <p><b>Designer</b></p>
+          <ul class="list-unstyled">
+            <li>
+              <div class="row">
+                <div class="col-5">Entry Level</div>
+                <div class="col-3 text-right">x3</div>
+                <div class="col-4 text-right">$2,000</div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-5">Specialist Level</div>
+                <div class="col-3 text-right">x1</div>
+                <div class="col-4 text-right">$1,500</div>
+              </div>
+            </li>
+          </ul>
+          <p><b>Developer</b></p>
+          <ul class="list-unstyled">
+            <li>
+              <div class="row">
+                <div class="col-5">Entry Level</div>
+                <div class="col-3 text-right">x3</div>
+                <div class="col-4 text-right">$2,000</div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-5">Specialist Level</div>
+                <div class="col-3 text-right">x1</div>
+                <div class="col-4 text-right">$1,500</div>
+              </div>
+            </li>
+          </ul>
+          <hr>
+          <p class="lead">Total</p>
+          <a class="btn btn-primary btn-block" href="">Start Over</a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="fixed-bottom bg-light p-4" style="padding-left: 256px !important; z-index: 1020;">
+  <div class="container">
+    <p class="text-muted"><b>Disclaimer</b></p>
+    <p class="text-muted mb-0">The displayed total cost is only a Rough Order of Magnitude (ROM) estimate – not a quotation – of Labor Cost based on the information provided. As such, this value may be inappropriate once additional information or specifications are provided. Possible factors affecting the actual cost include, but are not limited to, project duration, other resources, infrastructure setup, and licenses.</p>  
+  </div>
+</div>
+
+
+
+
+
+
+

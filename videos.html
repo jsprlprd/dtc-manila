@@ -4,30 +4,43 @@ layout: default
 
 <section class="content">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="card">
-          <img class="card-img-top" src="https://dummyimage.com/16:9x1080/" alt="">
-          <div class="card-body">
-            <h6 class="card-title h2">Title</h6>
-            <p class="card-text">Description</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card-stacked" style="max-height: calc(100vh - 456px); overflow: auto;">
-          {% for project in site.projects %}
-            <a class="card">
-              <div class="card-img-wrapper">
-                <img class="card-img" src="https://dummyimage.com/16:9x1080/" alt="">
-              </div>
-              <div class="card-img-overlay">
-                <h6 class="card-title h4">{{ project.title }}</h6>
-              </div>
-            </a>
-          {% endfor %}
-        </div>
+
+    <div class="card border-0">
+      <img class="card-img-top" src="https://dummyimage.com/16:9x1080/" alt="">
+      <div class="card-body">
+        <h6 class="card-title h2">Title</h6>
+        <p class="card-text">Description</p>
       </div>
     </div>
+
+  </div>
+</section>
+
+<section class="content bg-light">
+  <div class="container">
+    <div class="header">
+      <h2 class="header-title">Other Videos</h2>
+    </div>
+    <ul class="list-unstyled">
+      {% for project in site.projects %}
+        <li>
+          <a href="" class="media">
+            <div class="mr-5">
+              <img src="https://dummyimage.com/16:9x1080/" alt="" height="240" width="auto">
+            </div>
+            <div class="media-body">
+              <h6 class="h4">{{ project.title }}</h6>
+              <p>{{ project.description }}</p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="content" data-aos="fade-right">
+  <div class="container">
+    <a class="cta cta-lg" href="{{ site.baseurl }}/services.html">Know more about the center<i class="fas fa-arrow-right ml-3"></i></a>
   </div>
 </section>

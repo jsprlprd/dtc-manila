@@ -13,3 +13,7 @@
 - text: About
   icon: 
   url: about.html
+
+- text: Tools
+  icon: 
+  url: tools/contribution/

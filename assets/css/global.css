@@ -39,12 +39,12 @@ h3, .h3 {
 
 
 body {
-  padding-top: 112px;
+  padding-top: 72px;
 }
 
 .navbar {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
 }
 
 .navbar-brand {
@@ -65,9 +65,9 @@ body {
 
 
 .navbar-nav .nav-link {
-  padding: 0;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  /* padding: 0; */
+  /* padding-left: 0 !important; */
+  /* padding-right: 0 !important; */
   margin: 0.5rem 1rem;
 }
 
@@ -84,19 +84,30 @@ body {
 }
 
 .heading {
-  margin-top: 240px;
-  margin-bottom: 320px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
 
 .heading-title {
   margin-bottom: 0;
 }
 
+.heading-subtitle {
+  margin-bottom: 0;
+  color: #666666;
+  font-size: 18px;
+  margin-top: 4px;
+}
 
 
 .content {
   padding-top: 160px;
   padding-bottom: 160px;
+}
+
+.content .heading {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -148,7 +159,10 @@ footer .heading-title {
 
 
 
-
+.card {
+  border: 0;
+  border-radius: 8px;
+}
 
 
 a.card {
@@ -262,3 +276,8 @@ a.cta {
   margin-top: 16px;
   margin-bottom: 0;
 }
+
+
+
+
+

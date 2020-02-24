@@ -1,0 +1,51 @@
+---
+layout: tools
+container-type: container
+heading: true
+heading-title: Add New Contribution
+---
+
+
+<div class="row">
+  <div class="col-lg-8">
+
+    {% include components/molecules/form-group/input.html 
+      form-layout=""
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class=""
+      form-label-size=""
+      form-label-text="Title of the Project"
+      input-size=""
+      input-type="text"
+      input-name="project-title"
+      input-value=""
+      input-placeholder="Enter Title of the Project"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+    {% include components/molecules/form-group/textarea.html 
+      form-layout=""
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class=""
+      form-label-size=""
+      form-label-text="Descriptions"
+      input-size=""
+      input-type="text"
+      input-name="project-description"
+      input-value=""
+      input-placeholder="Tell me more about the Project"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+  </div>
+</div>

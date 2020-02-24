@@ -1,0 +1,47 @@
+---
+layout: tools
+container-type: container
+heading: true
+heading-title: Contribution
+heading-button: '<a class="btn btn-primary" href="/tools/contribution/add-new-contribution.html">Add New Contribution</a>'
+---
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Project Details</th>
+      <th>Owner</th>
+      <th>Date Publish</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for project in site.projects %}
+      <tr>
+        <td>
+          <div class="media">
+            <div class="mr-3">
+              <div class="embed-responsive embed-responsive-4x3" style="width: 160px;">
+                <img class="embed-responsive-item" src="{{ site.baseurl }}{{project.thumbnail}}" alt="">
+              </div>
+            </div>
+            <div class="media-body">
+              <a class="lead" href="{{ site.baseurl }}/tools/contribution/add-new-contribution.html">{{ project.title }}</a>
+              <p class="text-muted">{{ project.description }}</p>
+              <ul class="list-unstyled list-inline">
+                {% for category in project.category %}
+                  <li class="list-inline-item"><span class="badge badge-light">{{ category }}</span></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </td>
+        <td class="text-nowrap">Jasper Lepardo</td>
+        <td class="text-nowrap">September 28, 2016</td>
+        <td>
+          <a href=""><i class="fas fa-ellipsis-v"></i></a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

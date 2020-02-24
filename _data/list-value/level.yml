@@ -1,0 +1,14 @@
+- text: Entry
+  value: entry
+
+- text: Intermediate
+  value: intermediate
+
+- text: Specialist
+  value: specialist
+
+- text: Expert
+  value: expert
+
+- text: Manager 1
+  value: manager-1
