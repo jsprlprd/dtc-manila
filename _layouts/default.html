@@ -2,37 +2,29 @@
 layout: base
 ---
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-      <img class="navbar-image" src="{{ site.baseurl }}/assets/img/logo/LOGO_DXC-Technology-Black-01.svg" alt="" height="32" />
-      <span class="navbar-text">DTC Manila</span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      {% include components/molecules/nav-menu.html
-        nav-type="navbar-nav mr-auto"
-        isLarge=""
-        isStacked=""
-        isJustified=""
-        list-value-name=site.data.navigation.global
-        hasIcon="true"
-      %}
-
-      <ul class="list-unstyled list-inline mb-0">
-        <li class="list-inline-item">Jasper Lepardo</li>
-        <li class="list-inline-item">
-          <a href="">Logout</a>
-        </li>
-      </ul>
-
-      
-
-      <!-- <a class="btn btn-primary btn-lg shadow-sm" href="{{ site.baseurl }}/engage-with-us.html">Engage With Us</a> -->
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="global-nav">
+  <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img class="navbar-image" src="{{ site.baseurl }}/assets/img/logo/LOGO_DXC-Technology-Black-01.svg" alt="" height="32" />
+    <span class="navbar-text">DTC Manila</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-nav-menu" aria-controls="global-nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="global-nav-menu">
+    {% include components/molecules/nav-menu.html
+      nav-type="navbar-nav mr-auto"
+      isLarge=""
+      isStacked=""
+      isJustified=""
+      list-value-name=site.data.navigation.global
+      hasIcon="true"
+    %}
+    <ul class="list-unstyled list-inline mb-0">
+      <li class="list-inline-item">Jasper Lepardo</li>
+      <li class="list-inline-item">
+        <a href="">Logout</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
@@ -42,75 +34,80 @@ layout: base
 
 <footer>
   <div class="container">
-    <div style="">
-      <div class="header text-center">
-        <h1 class="header-title">Begin your digital transformation<br>journey today.</h1>
-        <a class="btn btn-primary btn-lg mt-5" href="">Engage With Us</a>
+    <div class="heading">
+      <h1 class="heading-title">Begin your digital transformation journey today.</h1>
+      <a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/engage-with-us.html">Engage With Us</a>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <h3>DTC Manila</h3>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h3>DTC Manila</h3>
-        </div>
-        <div class="col-md-2">
-          <ul class="footer-nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Videos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">About</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <ul class="footer-nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Request a Visit</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Find Us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <ul class="footer-nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="">Global DTC</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">DTC Newcastle</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">DTC Adelaide</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">DTC NCE</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <ul class="footer-nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="">What We Sell</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Workplace</a>
-            </li>
-          </ul>
-        </div>
+      <div class="col-lg-2">
+        <ul class="footer-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Tools</a>
+          </li>
+        </ul>
       </div>
-      <hr>
-      <div class="text-muted text-center">
-        Copyright © 2018 DTC Manila. All rights reserved.
+      <div class="col-lg-2">
+        <ul class="footer-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="">Request a Visit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Find Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul class="footer-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC Global</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC Adelaide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC Bangalore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC New Orleans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC Newcastle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC Sofia</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul class="footer-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="">What We Sell</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">DTC Manila@workplace</a>
+          </li>
+        </ul>
       </div>
     </div>
+    <div class="copyright">
+      <p class="copyright-text">© DXC Technology Company 2019 DTC Manila Portal</p>
+    </div>
   </div>
+
 </footer>
